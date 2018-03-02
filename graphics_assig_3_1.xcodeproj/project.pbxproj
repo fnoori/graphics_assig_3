@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA02A4A5203F6E3800B6557F /* GlyphExtractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA02A4A4203F6E3800B6557F /* GlyphExtractor.cpp */; };
 		EA3D959C2035F0CE00FE1DEE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA3D959B2035F0CE00FE1DEE /* main.cpp */; };
+		EA3D95A42035F11000FE1DEE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3D95A32035F11000FE1DEE /* OpenGL.framework */; };
+		EA3D95A62035F12800FE1DEE /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3D95A52035F12800FE1DEE /* libglfw.3.2.dylib */; };
+		EA3D95A82035F14500FE1DEE /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3D95A72035F14500FE1DEE /* libGLEW.2.1.0.dylib */; };
+		EA3D95B82035F1AF00FE1DEE /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = EA3D95B02035F1AF00FE1DEE /* glad.c */; };
+		EA3D95C72035F32B00FE1DEE /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA3D95C62035F32B00FE1DEE /* texture.cpp */; };
+		EA841EA9203FC83D008ADA24 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA02A4A6203F715B00B6557F /* libfreetype.6.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,49 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA02A4A3203F6E3800B6557F /* GlyphExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlyphExtractor.h; sourceTree = "<group>"; };
+		EA02A4A4203F6E3800B6557F /* GlyphExtractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlyphExtractor.cpp; sourceTree = "<group>"; };
+		EA02A4A6203F715B00B6557F /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = ../../../../usr/local/Cellar/freetype/2.9/lib/libfreetype.6.dylib; sourceTree = "<group>"; };
 		EA3D95982035F0CE00FE1DEE /* graphics_assig_3_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = graphics_assig_3_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3D959B2035F0CE00FE1DEE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EA3D95A32035F11000FE1DEE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EA3D95A52035F12800FE1DEE /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		EA3D95A72035F14500FE1DEE /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		EA3D95AC2035F1AF00FE1DEE /* khrplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
+		EA3D95AE2035F1AF00FE1DEE /* glad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glad.h; sourceTree = "<group>"; };
+		EA3D95B02035F1AF00FE1DEE /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		EA3D95C12035F32B00FE1DEE /* tessControl.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessControl.glsl; sourceTree = "<group>"; };
+		EA3D95C22035F32B00FE1DEE /* tessEval.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tessEval.glsl; sourceTree = "<group>"; };
+		EA3D95C32035F32B00FE1DEE /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		EA3D95C42035F32B00FE1DEE /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		EA3D95C52035F32B00FE1DEE /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		EA3D95C62035F32B00FE1DEE /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		EA59F2F0204206B300AFA270 /* README.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = README.pdf; sourceTree = "<group>"; };
+		EA6F64B72044D18B00A978D0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EA841EAB203FDE06008ADA24 /* Inconsolata.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inconsolata.otf; sourceTree = "<group>"; };
+		EABFDA662040ABF600C12B16 /* SourceSansPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.otf"; sourceTree = "<group>"; };
+		EABFDA672040ABF600C12B16 /* SourceSansPro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-LightIt.otf"; sourceTree = "<group>"; };
+		EABFDA682040ABF600C12B16 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		EABFDA692040ABF600C12B16 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		EABFDA6A2040ABF600C12B16 /* SourceSansPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-It.otf"; sourceTree = "<group>"; };
+		EABFDA6B2040ABF600C12B16 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
+		EABFDA6C2040ABF600C12B16 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
+		EABFDA6D2040ABF600C12B16 /* SourceSansPro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BoldIt.otf"; sourceTree = "<group>"; };
+		EABFDA6E2040ABF600C12B16 /* SourceSansPro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackIt.otf"; sourceTree = "<group>"; };
+		EABFDA6F2040ABF600C12B16 /* SourceSansPro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLightIt.otf"; sourceTree = "<group>"; };
+		EABFDA702040ABF600C12B16 /* SourceSansPro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.otf"; sourceTree = "<group>"; };
+		EABFDA712040ABF600C12B16 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
+		EABFDA722040ABF600C12B16 /* SourceSansPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.otf"; sourceTree = "<group>"; };
+		EABFDA742040ABF600C12B16 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		EABFDA752040ABF600C12B16 /* AlexBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlexBrush-Regular.ttf"; sourceTree = "<group>"; };
+		EABFDA772040ABF600C12B16 /* Lora-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Italic.ttf"; sourceTree = "<group>"; };
+		EABFDA782040ABF600C12B16 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		EABFDA792040ABF600C12B16 /* Lora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Bold.ttf"; sourceTree = "<group>"; };
+		EABFDA7A2040ABF600C12B16 /* Lora-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EABFDA7B2040ABF600C12B16 /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
+		EABFDA7C2040B77400C12B16 /* Qarmic_sans_Abridged.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Qarmic_sans_Abridged.ttf; sourceTree = "<group>"; };
+		EAFDDC1F2044B333001861EE /* pointVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = pointVertex.glsl; sourceTree = "<group>"; };
+		EAFDDC202044B33F001861EE /* pointFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = pointFragment.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +80,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA841EA9203FC83D008ADA24 /* libfreetype.6.dylib in Frameworks */,
+				EA3D95A82035F14500FE1DEE /* libGLEW.2.1.0.dylib in Frameworks */,
+				EA3D95A62035F12800FE1DEE /* libglfw.3.2.dylib in Frameworks */,
+				EA3D95A42035F11000FE1DEE /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +95,7 @@
 			children = (
 				EA3D959A2035F0CE00FE1DEE /* graphics_assig_3_1 */,
 				EA3D95992035F0CE00FE1DEE /* Products */,
+				EA3D95A22035F11000FE1DEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +110,137 @@
 		EA3D959A2035F0CE00FE1DEE /* graphics_assig_3_1 */ = {
 			isa = PBXGroup;
 			children = (
+				EA6F64B72044D18B00A978D0 /* README.md */,
+				EA59F2F0204206B300AFA270 /* README.pdf */,
+				EA841EAA203FDDC7008ADA24 /* fonts */,
+				EA3D95C02035F32B00FE1DEE /* shaders */,
+				EA3D95C62035F32B00FE1DEE /* texture.cpp */,
+				EA3D95C52035F32B00FE1DEE /* texture.h */,
+				EA3D95A92035F1AF00FE1DEE /* glad */,
 				EA3D959B2035F0CE00FE1DEE /* main.cpp */,
 			);
 			path = graphics_assig_3_1;
+			sourceTree = "<group>";
+		};
+		EA3D95A22035F11000FE1DEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA02A4A6203F715B00B6557F /* libfreetype.6.dylib */,
+				EA3D95A72035F14500FE1DEE /* libGLEW.2.1.0.dylib */,
+				EA3D95A52035F12800FE1DEE /* libglfw.3.2.dylib */,
+				EA3D95A32035F11000FE1DEE /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA3D95A92035F1AF00FE1DEE /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				EA3D95AA2035F1AF00FE1DEE /* include */,
+				EA3D95AF2035F1AF00FE1DEE /* src */,
+			);
+			path = glad;
+			sourceTree = "<group>";
+		};
+		EA3D95AA2035F1AF00FE1DEE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EA3D95AB2035F1AF00FE1DEE /* KHR */,
+				EA3D95AD2035F1AF00FE1DEE /* glad */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EA3D95AB2035F1AF00FE1DEE /* KHR */ = {
+			isa = PBXGroup;
+			children = (
+				EA3D95AC2035F1AF00FE1DEE /* khrplatform.h */,
+			);
+			path = KHR;
+			sourceTree = "<group>";
+		};
+		EA3D95AD2035F1AF00FE1DEE /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				EA3D95AE2035F1AF00FE1DEE /* glad.h */,
+			);
+			path = glad;
+			sourceTree = "<group>";
+		};
+		EA3D95AF2035F1AF00FE1DEE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA3D95B02035F1AF00FE1DEE /* glad.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EA3D95C02035F32B00FE1DEE /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				EA3D95C12035F32B00FE1DEE /* tessControl.glsl */,
+				EA3D95C22035F32B00FE1DEE /* tessEval.glsl */,
+				EA3D95C32035F32B00FE1DEE /* fragment.glsl */,
+				EA3D95C42035F32B00FE1DEE /* vertex.glsl */,
+				EAFDDC1F2044B333001861EE /* pointVertex.glsl */,
+				EAFDDC202044B33F001861EE /* pointFragment.glsl */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		EA841EAA203FDDC7008ADA24 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EABFDA7C2040B77400C12B16 /* Qarmic_sans_Abridged.ttf */,
+				EABFDA732040ABF600C12B16 /* alex-brush */,
+				EABFDA762040ABF600C12B16 /* lora */,
+				EABFDA652040ABF600C12B16 /* source-sans-pro */,
+				EA841EAB203FDE06008ADA24 /* Inconsolata.otf */,
+				EA02A4A4203F6E3800B6557F /* GlyphExtractor.cpp */,
+				EA02A4A3203F6E3800B6557F /* GlyphExtractor.h */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		EABFDA652040ABF600C12B16 /* source-sans-pro */ = {
+			isa = PBXGroup;
+			children = (
+				EABFDA662040ABF600C12B16 /* SourceSansPro-Light.otf */,
+				EABFDA672040ABF600C12B16 /* SourceSansPro-LightIt.otf */,
+				EABFDA682040ABF600C12B16 /* SourceSansPro-SemiboldIt.otf */,
+				EABFDA692040ABF600C12B16 /* SIL Open Font License.txt */,
+				EABFDA6A2040ABF600C12B16 /* SourceSansPro-It.otf */,
+				EABFDA6B2040ABF600C12B16 /* SourceSansPro-Bold.otf */,
+				EABFDA6C2040ABF600C12B16 /* SourceSansPro-Regular.otf */,
+				EABFDA6D2040ABF600C12B16 /* SourceSansPro-BoldIt.otf */,
+				EABFDA6E2040ABF600C12B16 /* SourceSansPro-BlackIt.otf */,
+				EABFDA6F2040ABF600C12B16 /* SourceSansPro-ExtraLightIt.otf */,
+				EABFDA702040ABF600C12B16 /* SourceSansPro-ExtraLight.otf */,
+				EABFDA712040ABF600C12B16 /* SourceSansPro-Semibold.otf */,
+				EABFDA722040ABF600C12B16 /* SourceSansPro-Black.otf */,
+			);
+			path = "source-sans-pro";
+			sourceTree = "<group>";
+		};
+		EABFDA732040ABF600C12B16 /* alex-brush */ = {
+			isa = PBXGroup;
+			children = (
+				EABFDA742040ABF600C12B16 /* SIL Open Font License.txt */,
+				EABFDA752040ABF600C12B16 /* AlexBrush-Regular.ttf */,
+			);
+			path = "alex-brush";
+			sourceTree = "<group>";
+		};
+		EABFDA762040ABF600C12B16 /* lora */ = {
+			isa = PBXGroup;
+			children = (
+				EABFDA772040ABF600C12B16 /* Lora-Italic.ttf */,
+				EABFDA782040ABF600C12B16 /* SIL Open Font License.txt */,
+				EABFDA792040ABF600C12B16 /* Lora-Bold.ttf */,
+				EABFDA7A2040ABF600C12B16 /* Lora-BoldItalic.ttf */,
+				EABFDA7B2040ABF600C12B16 /* Lora-Regular.ttf */,
+			);
+			path = lora;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3D95C72035F32B00FE1DEE /* texture.cpp in Sources */,
 				EA3D959C2035F0CE00FE1DEE /* main.cpp in Sources */,
+				EA3D95B82035F1AF00FE1DEE /* glad.c in Sources */,
+				EA02A4A5203F6E3800B6557F /* GlyphExtractor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +417,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/opt/freetype/include/freetype2,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/freetype/2.9/lib,
+					/usr/local/opt/freetype/lib,
+				);
+				OTHER_LDFLAGS = "-lfreetype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +437,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/opt/freetype/include/freetype2,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/freetype/2.9/lib,
+					/usr/local/opt/freetype/lib,
+				);
+				OTHER_LDFLAGS = "-lfreetype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
